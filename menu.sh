@@ -8,7 +8,7 @@ case $questao in
 1) echo "Exercício 1
  Elaborar um script que receba dois números como parâmetros e como resultado da sua execução exiba as seguintes informações:
  - O maior dos números recebidos;
- - O somatório dos números recebidos. " ;;
+ - O somatório dos números recebidos.;;
 2) echo "Exercício 2
  Elaborar um script que solicite a informação de um nome de usuário e verifique se o nome informado é um usuário válido no sistema
  (desconsiderando as diferenças entre maiúsculas e minúsculas). 
