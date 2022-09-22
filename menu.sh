@@ -1,21 +1,47 @@
 #!/bin/bash
-menu
+#modificando o menu
+#menu
 
-echo "Digite o numero da questão que deseja ver"
-read questao
-
-case $questao in
-1) echo "Exercício 1 Elaborar um script que receba dois números como parâmetros e como resultado da sua execução exiba as seguintes informações:
- - O maior dos números recebidos;
- - O somatório dos números recebidos. " ;;
-2) echo "dois" ;;
-3) echo "tres" ;;
-4) echo "quatro" ;;
-5) echo "cinco" ;;
-6) echo "seis" ;;
-7) echo "sete" ;;
-8) echo "oito" ;;
-9) echo "nove" ;;
-10) echo "dez" ;;
-*) echo "Opcao Invalida!" ;;
+echo "qual questao voce quer testar?"
+read opcao
+case $opcao in 
+   1) echo "1"
+   bash q1.sh
+   ;;
+   2) echo "2"
+   bash q2.sh
+   ;;
+   3) echo "3"
+   bash q3.sh
+   ;;
+   4) echo "4"
+   bash q4.sh
+   ;;
+   5) echo "5"
+   bash q5.sh
+   ;;
+   6) echo "6"
+   bash q6.sh
+   ;;
+   7) echo "7"
+   bash q7.sh
+   ;;
+   8) echo "8"
+   bash q8.sh
+   ;;
+   9) echo "9"
+   bash q9.sh
+   ;;
+   10) echo "10"
+   bash q10.sh
+   ;;
+   11) echo "11"
+   bash q11.sh
+   ;;
+   12) echo "12"
+   bash q12.sh
+   ;;
+   13) echo "13"
+   bash q13.sh
+   ;;
 esac
