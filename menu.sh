@@ -1,18 +1,30 @@
 #!/bin/bash
-#modificando o menu
 #menu
 
-echo "qual questao voce quer testar?"
-read opcao
+n=0
+while [ $n -eq 0 ]
+do
+echo "qual questao voce quer testar [1 - 13]?"
+   read opcao
+   
+   if [ $opcao -lt 14 ]
+   then
+   if [ $opcao -gt 0 ]
+   then
+   n=1
+   fi
+   fi
+ done
+ 
 case $opcao in 
    1) echo "1"
-   bash q1.sh
+   #bash q1.sh
    ;;
    2) echo "2"
-   bash q2.sh
+   #bash q2.sh
    ;;
    3) echo "3"
-   bash q3.sh
+   #bash q3.sh
    ;;
    4) echo "4"
    bash q4.sh
