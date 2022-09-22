@@ -1,6 +1,10 @@
 #!/bin/bash
 #menu
 
+n1=0
+while [ $n1 -eq 0 ]
+do
+      
 n=0
 while [ $n -eq 0 ]
 do
@@ -9,16 +13,18 @@ echo "qual questao voce quer testar [1 - 13]?"
    
    if [ $opcao -lt 14 ]
    then
-   if [ $opcao -gt 0 ]
-   then
-   n=1
-   fi
+      if [ $opcao -gt 0 ]
+      then
+         n=1
+      fi
    fi
  done
- 
+
+   
+
 case $opcao in 
    1) echo "1"
-   #bash q1.sh
+   bash q1.sh
    ;;
    2) echo "2"
    #bash q2.sh
@@ -57,3 +63,13 @@ case $opcao in
    bash q13.sh
    ;;
 esac
+
+echo " quer resolver outra questao digite [n] para nao "
+read opcao1
+   
+   if [ $opcao1 = "n" ]
+      then
+         n1=1
+      fi
+
+done 
