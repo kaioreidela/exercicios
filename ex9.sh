@@ -58,6 +58,6 @@ do
       echo "                    erro" 
          n1=0
    fi 
-done
+done 
 
 
