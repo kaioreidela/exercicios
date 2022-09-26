@@ -1,9 +1,10 @@
-
-
 #!/bin/bash
 
 questao ()
 {
+
+echo "digite as palavras"
+
 read p
 echo "$p" | fmt -1 | sort
 }
@@ -34,6 +35,7 @@ clear
    else 
       echo "                    erro" 
    fi
+
 done
 
 while [ $n1 -eq 0 ] || [ $n1 -eq 2 ]
@@ -58,4 +60,6 @@ do
       echo "                    erro" 
          n1=0
    fi 
-done
+done 
+
+
