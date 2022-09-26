@@ -3,6 +3,7 @@
 
 questao ()
 {
+echo "digite as palavras"
 read p
 echo "$p" | fmt -1 | sort
 }
