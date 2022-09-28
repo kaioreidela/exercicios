@@ -1,27 +1,26 @@
-
-
 #!/bin/bash
+#questao 12
 questao ()
-
 {
-#desenvolver script que faca as opercoes basicas
- echo "digite a operacao"
- read operacao
-
-echo "$((operacao))"
+zenity --list \
+    --title="Trabalho" \
+    --column="Usuário Cadastrados" \
+    --text "" \
+    "$(cat /etc/passwd | grep -E 'home|root' | cut -d : -f 1,6 | sed 's/:/ => /')"
 }
-clear
-echo ""
-echo "Questão 9"
-echo ""
 
-echo "Desenvolva um script que receba uma lista de palavras como parâmetros e exiba, como resultado, essas palavras ordenadas."
+clear
+
+echo ""
+echo "Questão 12"
+echo ""
+echo "Desenvolva um script que apresente na tela os usuários cadastrados no sistema e os seus respectivos diretórios home."
 echo ""
 
 n1=0
 while [ $n1 -eq 0 ]
 do
-echo " essa e a questao que vc deseja [y/n]?"
+echo " essa e a questao que vc deseja?[y/n]"
 echo ""
 read opcao1
 clear
@@ -45,12 +44,12 @@ do
    questao
    fi  
 
-   echo " quer refazer a questao [y/n]?"
+   echo " quer refazer a questao? [y/n]"
    read opcao1
    clear
 
    if [ $opcao1 = "n" ]
-     then
+      then
          n1=1
    
    elif [ $opcao1 = "y" ]

@@ -1,26 +1,26 @@
 #!/bin/bash
-
+#questao 13
 questao ()
 {
-
-echo "digite as palavras"
-
-read p
-echo "$p" | fmt -1 | sort
+zenity --list \
+    --title="Trabalho" \
+    --column="Palavras em ordem alfabetica" \
+    --text "" \
+    "$(cat /etc/passwd | grep -E "root|home" | cut -d ":" -f 7 | sort | uniq -c | sort | head -n 1 | tr -s "  " | awk '{ print $2 "  => " $1 }')"
 }
 
 clear
-echo ""
-echo "Questão 9"
-echo ""
 
-echo "Desenvolva um script que receba uma lista de palavras como parâmetros e exiba, como resultado, essas palavras ordenadas."
+echo ""
+echo "Questão 13"
+echo ""
+echo "Uma das informações armazenadas no arquivo /etc/passwd é o shell utilizado por cada usuário do sistema (campo 7). Desenvolva um script que informe qual é o shell mais utilizado. "
 echo ""
 
 n1=0
 while [ $n1 -eq 0 ]
 do
-echo " essa e a questao que vc deseja [y/n]?"
+echo " essa e a questao que vc deseja?[y/n]"
 echo ""
 read opcao1
 clear
@@ -35,7 +35,6 @@ clear
    else 
       echo "                    erro" 
    fi
-
 done
 
 while [ $n1 -eq 0 ] || [ $n1 -eq 2 ]
@@ -45,7 +44,7 @@ do
    questao
    fi  
 
-   echo " quer refazer a questao [y/n]?"
+   echo " quer refazer a questao? [y/n]"
    read opcao1
    clear
 
@@ -60,6 +59,4 @@ do
       echo "                    erro" 
          n1=0
    fi 
-done 
-
-
+done
