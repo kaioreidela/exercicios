@@ -20,38 +20,38 @@ menu ()
       
       case $opcao in 
          1)
-         bash q1.sh ;;
+         bash ex1.sh ;;
          2)
-         bash q2.sh ;;
+         bash ex2.sh ;;
          3)
-         bash q3.sh ;;
+         bash ex3.sh ;;
          4)
-         bash q4.sh ;;
+         bash ex4.sh ;;
          5)
-         bash q5.sh ;;
+         bash ex5.sh ;;
          6) echo "6"
-         #bash q6.sh
+         bash ex6.sh
          ;;
          7) echo "7"
-         #bash q7.sh
+         bash ex7.sh
          ;;
          8) echo "8"
-         #bash q8.sh
+         bash ex8.sh
          ;;
          9) echo "9"
-         #bash q9.sh
+         bash ex9.sh
          ;;
          10) echo "10"
-         #bash q10.sh
+         bash ex10.sh
          ;;
          11) echo "11"
-         #bash q11.sh
+         bash ex11.sh
          ;;
          12) echo "12"
-         #bash q12.sh
+         bash ex13.sh
          ;;
          13) echo "13"
-         #bash q13.sh
+         bash ex15.sh
          ;;
       esac
 
