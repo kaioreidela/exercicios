@@ -29,28 +29,28 @@ menu ()
          bash ex4.sh ;;
          5)
          bash ex5.sh ;;
-         6) echo "6"
+         6)
          bash ex6.sh
          ;;
-         7) echo "7"
+         7)
          bash ex7.sh
          ;;
-         8) echo "8"
+         8)
          bash ex8.sh
          ;;
-         9) echo "9"
+         9)
          bash ex9.sh
          ;;
-         10) echo "10"
+         10)
          bash ex10.sh
          ;;
-         11) echo "11"
+         11)
          bash ex11.sh
          ;;
-         12) echo "12"
+         12)
          bash ex12.sh
          ;;
-         13) echo "13"
+         13)
          bash ex13.sh
          ;;
       esac
